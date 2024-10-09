@@ -3,7 +3,7 @@
 </head>
 <body>
 	<div align="center"><br />
-	PERHITUNGAN PENJUALAN BARANG 2c (updated 2b 2a).php</div> <br /><br />
+	PERHITUNGAN PENJUALAN BARANG 2c.php</div> <br /><br />
  <form method="post" action="" target="_self">
   <table width="300" border="1" align="center">
         <tr>
