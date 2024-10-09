@@ -1,3 +1,4 @@
+
 <html>
 <title>Hitung Penjualan Barang</title>
 </head>
@@ -5,12 +6,15 @@
 	<div align="center"><br />
 	PERHITUNGAN PENJUALAN BARANG 2c.php</div> <br /><br />
  <form method="post" action="" target="_self">
+
   <table width="300" border="1" align="center">
         <tr>
           <td>Kode Barang</td>
           <td>
               <select name="kode" id="kode">
+
                 <option>-- Silahkan Pilih --</option>
+
                 <option value="A01">A01 - Speaker</option>
                 <option value="B02">B02 - Mouse</option>
                 <option value="C03">C03 - Harddisk</option>
@@ -21,6 +25,7 @@
           <td>Jumlah Beli</td>
           <td><input type="text" name="jumlah" id="jumlah"></td>
         </tr>
+
         <tr>
           <td>Status</td>
           <td>
@@ -71,6 +76,7 @@ $submit = $_POST['Hitung'];
 {
 
 
+
 if ($kode=="A01"){
 	$nama="Speaker";
 	$harga=50000;
@@ -93,6 +99,8 @@ if ($kode=="D04"){
 
 $subtotal=$harga*$jumlah;
 
+
+
 if ($subtotal>=100000){
 	$diskon=0.15*$subtotal;
 }
@@ -106,6 +114,7 @@ if ($subtotal>=25000){
 }
 else
 	$diskon=0;
+
 	
 if ($status_member=="member"){
 	$diskon_status=0.1*$subtotal;
@@ -136,6 +145,7 @@ if ($kota_kirim=="Yogyakarta"){
 $total_diskon=$diskon+$diskon_status;
 
 $totalbayar=$subtotal-$total_diskon+$ongkos_kirim;
+
 ?>    
 
 </p>
@@ -143,6 +153,7 @@ $totalbayar=$subtotal-$total_diskon+$ongkos_kirim;
 <table width="300" border="1">
   <tr>
     <td width="125" align="left">Nama Barang</td>
+
     <td width="175"><?php echo $nama;?></td>
   </tr>
   <tr>
@@ -157,6 +168,7 @@ $totalbayar=$subtotal-$total_diskon+$ongkos_kirim;
     <td align="left">Sub Total</td>
     <td><div align="right">Rp. <?php echo number_format($subtotal,0,",",".");?>;</div></td>
   </tr>
+
   
      <tr>
   <td align="left">Status</td>
@@ -186,13 +198,16 @@ $totalbayar=$subtotal-$total_diskon+$ongkos_kirim;
   
   
   
+
   <tr>
     <td align="left">Total Bayar</td>
     <td><div align="right">Rp. <?php echo number_format($totalbayar,0,",",".");?>;</div></td>
   </tr>
 </table>
 
+
 <?php } ?>
+
 
 
 </center>
