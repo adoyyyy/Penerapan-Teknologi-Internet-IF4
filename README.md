@@ -1,2 +1,2 @@
 # Penerapan-Teknologi-Internet
-Repo ini digunakan untukPembelajaran
+Repo ini digunakan untuk Pembelajaran
